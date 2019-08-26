@@ -32,7 +32,7 @@ Mat PM_Diffusion::flux(Mat& kernel)
 	c = c.mul(c);
 	c = 1.0/(1.0 + c);
 
-	c = c.mul(nabla);
+	//c = c.mul(nabla);
 
 	return c;
 }
